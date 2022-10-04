@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             string option;
-            int length1;
-            int width1;
+            int length;
+            int width;
             int perimeter;
             int area;
             int i = 1;
@@ -44,9 +44,9 @@ namespace Assignment02
                 {
                     Console.WriteLine("Please introduce a new Length: ");
                     Rectangle rect = new Rectangle();
-                    length1 = int.Parse(Console.ReadLine());
-                    length1 = rect.SetNewLength(length1);
-                    Console.WriteLine("New Length: " + length1);
+                    length = int.Parse(Console.ReadLine());
+                    length = rect.SetNewLength(length);
+                    Console.WriteLine("New Length: " + length);
                     changeL++;
                 }
                 else if (option == "3")
@@ -59,9 +59,9 @@ namespace Assignment02
                 {
                     Console.WriteLine("Please introduce a new Width: ");
                     Rectangle rect = new Rectangle();
-                    width1 = int.Parse(Console.ReadLine());
-                    width1 = rect.SetNewWidth(width1);
-                    Console.WriteLine("New Width: " + width1);
+                    width = int.Parse(Console.ReadLine());
+                    width = rect.SetNewWidth(width);
+                    Console.WriteLine("New Width: " + width);
                     changeW++;
                 }
                 else if (option == "5")

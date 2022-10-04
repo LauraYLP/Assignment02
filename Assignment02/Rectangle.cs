@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    internal class Rectangle
+    public class Rectangle
     {
         private int length = 1;
-        private int width = 1;
+        private int width = 10;
 
         public Rectangle(int length, int width)
         {
@@ -58,6 +58,11 @@ namespace Assignment02
         public int GetArea()
         {
             return (Length * Width);
+        }
+
+        public static string GetCurrentLength(int length)
+        {
+            throw new NotImplementedException();
         }
     }
 }
